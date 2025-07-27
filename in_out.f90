@@ -1,7 +1,7 @@
-module in_outpost
+module in_out
 use mpi
-use parameterspost
-use flowvariablespost
+use parameters
+use flowvariables
 
 implicit none
 
@@ -35,76 +35,15 @@ read(1,*)
 read(1,*)
 close(1)
 
-! open(1,file='in_dns_tc.txt')
-! read(1,*)Nx
-! read(1,*)Ny
-! read(1,*)Nz
-! read(1,*)deltat
-! read(1,*)ntot
-! read(1,*)nsalva
-! read(1,*)Re
-! read(1,*) 
-! read(1,*)
-! read(1,*)
-! read(1,*)
-! read(1,*)Sch
-! read(1,*)
-! read(1,*)Rayl
-! read(1,*)gacc(1:2)
-! read(1,*)
-! close(1)
-
-!open(1,file='in_dns_tc.txt')
-!read(1,*)Nx
-!read(1,*)Ny
-!read(1,*)Nz
-!read(1,*)deltat
-!read(1,*)ntot
-!read(1,*)nsalva
-!read(1,*)Re
-!close(1)
 
 
-
-open(2,file='in_post.txt')
+open(2,file='in_convergence.txt')
 read(2,*)Nmin
 read(2,*)Nmax
 read(2,*)Ipasso
 close(2)
       
-      
-!open(3,file='in_particles.txt')
-!read(3,*)NParticles
-!read(3,*)radiusG1
-!read(3,*)radiusG2
-!read(3,*)radiusG3
-!read(3,*)rhorat
-!read(3,*)cprat
-!read(3,*)Froude
-!read(3,*)
-!read(3,*)
-!read(3,*)
-!read(3,*)
-!read(3,*)
-!read(3,*)
-!close(3)
-
-!open(2,file='in_particles.txt')
-!read(2,*)NParticles
-!read(2,*)radiusG1
-!read(2,*)radiusG2
-!read(2,*)radiusG3
-!read(2,*)rhorat
-!read(2,*)cprat
-!read(2,*)Froude
-!read(2,*)GenPart
-!read(2,*)filePartG1
-!read(2,*)fileTopolG1
-!read(2,*)filePartG2
-!read(2,*)fileTopolG2
-!read(2,*)filePartG3
-!read(2,*)fileTopolG3
-!close(2)
+    
 
 
       
@@ -279,4 +218,4 @@ end subroutine
 !***********************************************************************
 
 
-end module in_outpost
+end module in_out

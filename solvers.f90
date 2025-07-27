@@ -1,6 +1,6 @@
-module solverspost
+module solvers
 use mpi
-use parameterspost
+use parameters
 
 implicit none
 
@@ -138,5 +138,5 @@ return
 end subroutine
 !***********************************************************************
 !***********************************************************************
-end module solverspost
+end module solvers
 

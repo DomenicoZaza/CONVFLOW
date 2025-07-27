@@ -1,7 +1,6 @@
 !***********************************************************************
 !***********************************************************************
-module parameterspost
-
+module parameters
 use mpi
 
 implicit none
@@ -132,12 +131,12 @@ complex(kind=prec),allocatable, dimension(:)::uvhmean
 
 integer(kind=prec),allocatable,dimension(:)::nneven,nnodd
 
-end module parameterspost
+end module parameters
 !***********************************************************************
 !***********************************************************************
-module flowvariablespost
+module flowvariables
 use mpi 
-use parameterspost
+use parameters
 implicit none
 
 !....Fields in Physical Space
@@ -194,6 +193,6 @@ real(kind=prec),allocatable,dimension(:)::Ubulk,uumax
 
 
 
-end module flowvariablespost
+end module flowvariables
 !***********************************************************************
 !***********************************************************************
