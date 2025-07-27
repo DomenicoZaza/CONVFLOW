@@ -1,0 +1,3 @@
+12 					!Nmin
+56					!Nmax
+1 					!Ipasso
